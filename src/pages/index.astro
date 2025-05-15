@@ -1,5 +1,6 @@
 ---
 import Welcome from '../components/Welcome.astro';
+import Counter from '../components/Counter';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
@@ -7,6 +8,8 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+			<Counter count=123 client:visible>
+				<h1>Hello, React!</h1>
+			</Counter>
 	<Welcome />
 </Layout>
